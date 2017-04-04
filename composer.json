@@ -1,0 +1,33 @@
+{
+    "name": "antalaron/circular-reference-detect",
+    "description": "Circular reference detector",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antal Áron",
+            "email": "antalaron@antalaron.hu"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Antalaron\\Component\\CircularReferenceDetect\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Antalaron\\Component\\CircularReferenceDetect\\Tests\\": "tests/Tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
