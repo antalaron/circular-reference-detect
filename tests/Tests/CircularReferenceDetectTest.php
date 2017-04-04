@@ -259,7 +259,7 @@ class CircularReferenceDetectTest extends \PHPUnit_Framework_TestCase
         if (method_exists($this, 'expectException')) {
             $this->expectException($exception);
         } else {
-            $this->setExpectedExceptionRegExp($exception, $regexp);
+            $this->setExpectedExceptionRegExp($exception);
         }
     }
 }
