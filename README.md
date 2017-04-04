@@ -3,7 +3,7 @@ Circular reference detect
 
 [![Build Status](https://travis-ci.org/antalaron/circular-reference-detect.svg?branch=master)](https://travis-ci.org/antalaron/circular-reference-detect) [![Coverage Status](https://coveralls.io/repos/github/antalaron/circular-reference-detect/badge.svg)](https://coveralls.io/github/antalaron/circular-reference-detect?branch=master) [![Latest Stable Version](https://poser.pugx.org/antalaron/circular-reference-detect/v/stable)](https://packagist.org/packages/antalaron/circular-reference-detect) [![Latest Unstable Version](https://poser.pugx.org/antalaron/circular-reference-detect/v/unstable)](https://packagist.org/packages/antalaron/circular-reference-detect) [![License](https://poser.pugx.org/antalaron/circular-reference-detect/license)](https://packagist.org/packages/antalaron/circular-reference-detect)
 
-Library to detect reference circular references in array.
+PHP library to detect reference circular references in array.
 
 Installation
 ------------
@@ -29,7 +29,6 @@ require __DIR__.'/vendor/autoload.php';
 
 use Antalaron\Component\CircularReferenceDetect\CircularReferenceDetect;
 $a = [
-    '*' => ['a'],
     'a' => ['b'],
     'b' => ['c'],
     'c' => ['a'],
@@ -37,6 +36,13 @@ $a = [
 $detector = new CircularReferenceDetect();
 $detector->hasCircularReference($a);
 ```
+
+Documentation
+-------------
+
+1. [Installation](01-installation.md)
+2. [Usage](02-usage.md)
+3. [Contributing](03-contributing.md)
 
 License
 -------
