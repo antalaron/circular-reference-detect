@@ -40,9 +40,9 @@ $detector->hasCircularReference($a);
 Documentation
 -------------
 
-1. [Installation](01-installation.md)
-2. [Usage](02-usage.md)
-3. [Contributing](03-contributing.md)
+1. [Installation](docs/01-installation.md)
+2. [Usage](docs/02-usage.md)
+3. [Contributing](docs/03-contributing.md)
 
 License
 -------
